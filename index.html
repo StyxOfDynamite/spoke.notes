@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spoke.notes - Voice Note Your Future</title>
+    <title>spoke.ink - Voice Note Your Future</title>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         * {
@@ -57,14 +57,21 @@
         .logo {
             font-size: 4rem;
             font-weight: 900;
+            margin-bottom: 1rem;
+            animation: gradientAnimation 4s ease infinite;
+            letter-spacing: -2px;
+        }
+
+        .logo .spoke {
             background: linear-gradient(135deg, #ff6b7d, #4ecdc4, #45b7d1);
             background-size: 300% 300%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1rem;
-            animation: gradientAnimation 4s ease infinite;
-            letter-spacing: -2px;
+        }
+
+        .logo .ink {
+            color: #000000;
         }
 
         @keyframes gradientAnimation {
@@ -463,7 +470,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1 class="logo">spoke.notes</h1>
+            <h1 class="logo"><span class="spoke">spoke</span><span class="ink">.ink</span></h1>
             <p class="tagline">Voice Note Your Future</p>
             
             <h2 class="main-headline">Stream of Consciousness. <br>Structured Action.</h2>
